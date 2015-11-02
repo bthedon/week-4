@@ -11,31 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :size %><br>
-    <%= f.text_field :size %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :bread_id %><br>
-    <%= f.text_field :bread_id %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :photo %><br>
-    <%= f.text_field :photo %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <form>
+    <div class="form group">
+      <%= f.label :name %><br>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <div class="form group">
+      <%= f.label :size %><br>
+      <%= f.text_field :size, class: "form-control" %>
+    </div>
+    <div class="form group">
+      <%= f.label :description %><br>
+      <%= f.text_area :description, class: "form-control" %>
+    </div>
+    <div class="form group">
+      <%= f.label :bread_id %><br>
+      <%= f.text_field :bread_id, class: "form-control" %>
+    </div>
+    <div class="form group">
+      <%= f.label :sauce_id %><br>
+      <%= f.text_field :sauce_id, class: "form-control" %>
+    </div>
+    <div class="form group">
+      <%= f.label :price %><br>
+      <%= f.text_field :price, class: "form-control" %>
+    </div>
+    <div class="form group">
+      <%= f.label :photo %><br>
+      <%= f.text_field :photo, class: "form-control" %>
+    </div>
+    <div class="actions">
+      <%= f.submit, class: "btn btn-primary" %>
+    </div>
+  </form>
 <% end %>

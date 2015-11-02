@@ -19,10 +19,10 @@
         <td><%= bread.name %></td>
         <td><%= bread.description %></td>
         <td><%= bread.thickness_in_inches %></td>
-        <td><%= bread.upcharge %></td>
-        <td><%= link_to 'Show', bread %></td>
-        <td><%= link_to 'Edit', edit_bread_path(bread) %></td>
-        <td><%= link_to 'Destroy', bread, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= bread.upcharge %></td> 
+        <td><%= link_to 'Show', bread,  class: "btn btn-default text-right"%></td>
+        <td><%= link_to 'Edit', edit_bread_path(bread), class: "btn btn-default text-right" %></td>
+        <td><%= link_to 'Destroy', bread, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger text-right" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Bread', new_bread_path %>
+<%= link_to 'New Bread', new_bread_path ,class: "btn btn-primary" %>
